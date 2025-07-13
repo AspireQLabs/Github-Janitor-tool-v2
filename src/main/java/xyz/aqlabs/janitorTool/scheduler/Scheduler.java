@@ -38,7 +38,7 @@ public class Scheduler {
         organizations.forEach(
                 organization -> {
                     log.info("Found {} organizations to scan...", organizations.size());
-                    gitHubSweeper.startSweep(organization);
+                    gitHubSweeper.sweep(organization);
                 }
         );
 
