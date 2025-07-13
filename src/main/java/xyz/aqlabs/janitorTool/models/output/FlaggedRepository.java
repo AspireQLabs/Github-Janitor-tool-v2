@@ -1,8 +1,11 @@
 package xyz.aqlabs.janitorTool.models.output;
 
 import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
-@Builder
+@Setter
+@Getter
 public class FlaggedRepository {
 
     private String scm;
@@ -10,6 +13,8 @@ public class FlaggedRepository {
     private String name;
 
     private String url;
+
+    private String owner;
 
     private String lastActive;
 

@@ -21,6 +21,12 @@ public class GitHubOrganizationRepository {
     @JsonProperty("name")
     private String repoName;
 
+    @JsonProperty("owner")
+    private GitHubOrganizationRepositoryOwner owner;
+
+    @JsonProperty("url")
+    private String url;
+
     @JsonProperty("branches_url")
     private String branchesUrl;
 

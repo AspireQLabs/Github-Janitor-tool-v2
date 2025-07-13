@@ -13,6 +13,11 @@ public class JanitorConstants {
     // Param 3: %s (String) - Branch Name
     public static final String GET_BRANCH_URL = "https://api.github.com/repos/%s/%s/branches/%s";
 
+    // Endpoint to query GitHub API Delete Branch endpoint
+    // Param 1: %s (String) - Repository URL
+    // Param 2: %s (String) - Branch Name
+    public static final String DELETE_BRANCH_URL = "%s/git/refs/heads/%s";
+
 
     // Used to clean up urls
     public static final String BRANCH = "{/branch}";
